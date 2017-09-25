@@ -1,0 +1,532 @@
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GERAL */
+
+body {
+  background-color: #FFF;
+	text-align: left;
+	font-family: 'lato', sans-serif;
+	width: 100%;
+}
+h1 {
+  color: #142043;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+h3 {
+  color: #142043;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-top: 3%;
+}
+p {
+	color: #142043;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  line-height: 1.5em;
+}
+strong {
+  font-weight: 700;
+}
+img {
+	width: 100%;
+	display: inline-block;
+}
+.content {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.b-azul {
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #142043;
+  background: none;
+  border: 2px solid #142043;
+  padding: 20px;
+  display: inline-block;
+  margin-right: 16px;
+  transition-duration: 0.5s;
+  text-decoration: none;
+}
+.b-azul:hover {
+  background-color: #142043;
+  color: white;
+}
+.b-amarelo {
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #142043;
+  background-color: #efd25a;
+  border: none;
+  padding: 20px;
+  display: inline-block;
+	margin-right: 16px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+.b-amarelo:hover {
+  background-color: #e6b800;
+}
+
+/* MENU NORMAL */
+
+#menu-normal {
+  background-color: #FFF;
+  height: 100px;
+  box-shadow: 0 0 12px rgba(162,162,162,0.4);
+	position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000000000000000000000000;
+}
+#menu-normal img {
+	width: auto;
+	margin-bottom: 20px;
+}
+#menu-normal .content {
+	margin-top: 37px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	align-content: center;
+}
+#menu-normal nav ul {
+  display: flex;
+  flex-direction: row;
+	align-items: flex-start;
+	align-content: flex-start;
+  position: relative;
+}
+#menu-normal nav a {
+  font-weight: 400;
+  font-size: 1em;
+  color: #142043;
+  background: none;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+	padding: 22px 20px;
+  transition-duration: 0.5s;
+}
+#menu-normal nav a:hover {
+  color: grey;
+}
+#menu-normal nav a.active{
+  border-bottom: 3px solid #EED33E;
+}
+#menu-normal .contem-submenu {
+  position: relative;
+}
+#menu-normal .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #E9E9E9;
+  transition-duration: 0.5s;
+}
+#menu-normal .contem-submenu:hover .submenu {
+  display: block;
+}
+#menu-normal .contem-submenu.active .submenu {
+  display:block;
+}
+#menu-normal .submenu a:hover {
+	background-color: #E9E9E9;
+	color: #142043;
+}
+
+/* MENU HAMBURGUER - COM JAVASCRIPT */
+#menu-hamburguer {
+  height: 70px;
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(162,162,162,0.4);
+  z-index: 1000000000000000000000000;
+}
+#menu-hamburguer .content {
+  position: relative;
+}
+#menu-hamburguer img {
+	width: auto;
+	margin: 20px 0;
+}
+
+#menu-hamburguer .hamburger{
+  background:none;
+  position:absolute;
+  top:8px;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#142043;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000;
+}
+#menu-hamburguer .cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#142043;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:1000000000;
+}
+#menu-hamburguer .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1; position:absolute; top:70px; right:0; text-align:center; font-size:12px;}
+#menu-hamburguer .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+#menu-hamburguer .menu li {
+  font-family: 'lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  background-color: #fff;
+  border-bottom: 1px solid #E9E9E9;
+  transition: 0.5s;
+}
+#menu-hamburguer .menu li:first-child {
+  border-top: 1px solid #E9E9E9;
+}
+#menu-hamburguer .menu li:hover{
+  display: block;
+  color: #fff;
+  background-color:#142043;
+}
+#menu-hamburguer .menu ul li a {
+  text-decoration:none;
+  margin: 0px;
+  color:#142043;
+}
+#menu-hamburguer .menu ul li a:hover {
+  color: #fff;
+  text-decoration:none;
+}
+#menu-hamburguer .menu a{
+  text-decoration:none; color:#142043;}
+#menu-hamburguer .menu a:hover{text-decoration:none; color:#fff;}
+
+#menu-hamburguer .glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+#menu-hamburguer {display:none; font-size:12px;}
+#menu-hamburguer span{padding-left:20px;}
+#menu-hamburguer a{color:#142043; display:block; width: 100%; padding: 20px 0;}
+
+/* HOME > Parte 1 */
+
+#home1 {
+  background: url("img/home1-arroz.jpg") center center no-repeat #fff09c;
+	background-size: cover;
+	height: 90vh;
+	min-height: 500px;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	transition: ease .5s;
+}
+#home1.banner1 {
+  background-image: url('http://cozinharia-van.habemus.website/img/cardapio-1.jpg');
+}
+#home1.banner2 {
+  background-image: url('http://cozinharia-van.habemus.website/img/cardapio-2.jpg');
+  color: white;
+}
+#home1.banner3 {
+  background-image: url('http://cozinharia-van.habemus.website/img/cardapio-5.jpg');
+  color: white;
+}
+#home1.banner4 {
+  background-image: url('http://cozinharia-van.habemus.website/img/home1-arroz.jpg');
+}
+#home1.banner3 a, #home1.banner2 a {
+  border-color: white;
+  color: white;
+}
+#home1.banner3 a:hover, #home1.banner2 a:hover {
+  background-color: white;
+  color: #141F45;
+}
+#home1.banner3 h1, #home1.banner2 h1, #home1.banner3 h3, #home1.banner2 h3 {
+  color: currentColor;
+}
+#home1 h1 {
+  margin-bottom: 30px;
+}
+.h3line {
+  margin-top: 0.5em;
+  margin-bottom: 3%;
+}
+
+/* HOME > Parte 2 >> A COZINHARIA */
+
+.home2 {
+	display: block;
+  background-size: cover;
+  background-color: white;
+	padding: 5% 0;
+	min-height: 500px;
+}
+.home2 .content {
+	margin: 50px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.home2 section {
+	width: 48%;
+}
+.home2 h1 {
+  margin-bottom: 30px;
+}
+.home2 img {
+  width: 48%;
+	height: auto;
+}
+
+/* HOME > Parte 3 >> CÁRDAPIO  */
+
+.home3 {
+  background-color: #efd25a;
+  text-align: center;
+  padding: 10% 0;
+}
+.home3 h1 {
+  margin-bottom: 3%;
+}
+.galeria-home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+	align-content: center;
+  margin: 4% 0;
+}
+.galeria-home figure {
+  width: 33%;
+  display: block;
+  position: relative;
+}
+figcaption {
+  position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+  background-color: white;
+  text-align: left;
+  color: #A3A3A3;
+  line-height: 1.5;
+  padding: 10px 15px;
+}
+figcaption p {
+  font-size: 14px;
+	color: #A3A3A3;
+	line-height: 1.5em;
+	height: 40px;
+	background-color: white;
+	margin: 0;
+	display: none;
+}
+.galeria-home figure:hover figcaption p {
+  display: block;
+}
+.galeria-home img {
+  width: 100%;
+  display: block;
+}
+/* HOME > Parte 4 >> EVENTOS */
+
+.home4 {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+  background-size: cover;
+  background-color: white;
+	padding: 5% 0;
+	min-height: 500px;
+}
+.home4 .content {
+	margin: 50px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.home4 section {
+	width: 48%;
+}
+.home4 h1 {
+  margin-bottom: 30px;
+}
+.home4 img {
+  width: 48%;
+	height: auto;
+}
+
+/* RODAPE */
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #efd25a;
+}
+footer .content {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer section {
+  color: #142043;
+  font-size: 14px;
+	margin-top: 50px;
+  display: block;
+  width: 48%;
+}
+footer li {
+  list-style-type: none;
+  line-height: 1.5em;
+  padding: 0;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1010px) {
+  .galeria-home figure {
+    width: 50%;
+  }
+  .content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .home2 .content, .home4 .content {
+    flex-direction: column;
+  }
+  .home2 section, .home2 img, .home4 section, .home4 img {
+    width: 100%;
+  }
+  .home4 section, .home2 img {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #menu-normal {
+    display: none;
+  }
+ #menu-hamburguer {
+    display: flex;
+  }
+  #home1 {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 790px) {
+  .galeria-home figure {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 770px) {
+  footer {
+    height: 300px;
+  }
+  footer .content {
+    padding: 5% 0;
+    flex-direction: column;
+  }
+  footer section {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .b-amarelo, .b-azul {
+    display: block;
+    margin: 5px 0;
+  }
+  .galeria-home figcaption {
+    padding: 5px 15px;
+  }
+}
+@media screen and (max-width: 350px) {
+  footer {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .galeria-home figure:hover figcaption {
+  display: none;
+  }
+}
