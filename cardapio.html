@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cozinharia</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+		<link rel="icon" href="img/favicon-cozinharia.png">
+	</head>
+	
+	<body>
+    
+    <header id="menu-normal">
+
+			<div class="content">
+	      <img src="img/logo-cozinharia.svg" alt="Logotipo da Cozinharia">
+	      <nav>
+	        <ul>
+	          <li><a href="index.html">Home</a></li>
+	          <li><a href="a-cozinharia.html">A Cozinharia</a></li>
+	          <li><a href="cardapio.html" class=active>Cardápio</a></li>
+	          <li class=contem-submenu>
+	            <a href="#">Eventos</a>
+	            <ul class=submenu>
+	              <li><a href="casamentos.html">Casamentos</a></li>
+	              <li><a href="empresariais.html">Empresariais</a></li>
+	            </ul>
+	          </li>
+	          <li><a href="contato.html">Contato</a></li>
+	        </ul>
+	      </nav>
+			</div>
+    </header>
+    
+    <!-- MENU HAMBURGUER - COM JS -->
+    
+    <header id="menu-hamburguer">
+      <div class="content">
+        <img src="img/logo-cozinharia.svg" alt="Cozinharia">
+  			<button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+      </div>
+      
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="index.html" class=active>Home</a></li>
+            <li><a href="a-cozinharia.html">A Cozinharia</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="casamentos.html">Casamentos</a></li>
+            <li><a href="empresariais.html">Empresariais</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <div id="cardapio" class=background-grey>
+      <section class=conteiner>
+  
+  			<section class=cardapio>
+  	      <h1>Cardápio</h1>
+  	      <svg height="5" width="100">
+  	        <line x1="0" x2="100" style="stroke:#efd25a; stroke-width:6"/>
+  	      </svg>
+  	      <nav>
+    	      <a href="#almoco">Almoço</a>
+    	      <a href="#jantar">Jantar</a>
+    	      <a href="#bebidas">Bebidas</a>
+          </nav>
+  			</section>
+  
+  			<!-- ALMOÇO -->
+        <div class=tabela>
+    			<table id="almoco">
+    
+    				<thead>
+    					<tr>
+    						<th class="h2">Entradas do almoço</th>
+    						<th>Inteira</th>
+    						<th>Meia</th>
+    					</tr>
+    				</thead>
+    
+    				<tbody>
+    					<tr>
+    						<td>Pães integrais com mel e manteiga</td>
+    						<td>R$ 20,00</td>
+    						<td>R$ 15,00</td>
+    					</tr>
+    					<tr>
+    						<td>Salada verde</td>
+    						<td>R$ 16,00</td>
+    						<td>R$ 12,00</td>
+    					</tr>
+    					<tr>
+    						<td>Salada de folhas com frutas da estação</td>
+    						<td>R$ 20,00</td>
+    						<td>R$ 15,00</td>
+    					</tr>
+    					<tr>
+    						<td>Folheado de queijo</td>
+    						<td>R$ 18,00</td>
+    						<td>R$ 14,00</td>
+    					</tr>
+    					<tr>
+    						<td>Folheado de carne</td>
+    						<td>R$ 18,00</td>
+    						<td>R$ 14,00</td>
+    					</tr>
+    					<tr>
+    						<td>Tábua de frios</td>
+    						<td>R$ 20,00</td>
+    						<td>R$ 15,00</td>
+    					</tr>
+    					<!----------------------->
+    					<tr>
+    						<th class="h2">Pratos principais do almoço</th>
+    					</tr>
+    					<tr>
+    						<td>Macarrão com polvo</td>
+    						<td>R$ 27,00</td>
+    						<td>R$ 35,00</td>
+    					</tr>
+    					<tr>
+    						<td>Risoto de alcaparras</td>
+    						<td>R$ 26,00</td>
+    						<td>R$ 33,00</td>
+    					</tr>
+    					<tr>
+    						<td>Medalhão bovino com molho de ervas</td>
+    						<td>R$ 38,00</td>
+    						<td>R$ 44,00</td>
+    					</tr>
+    					<!------------------------>
+    					<tr>
+    						<th class="h2">Sobremesas do almoço</th>
+    					</tr>
+    					<tr>
+    						<td>Torta holandesa</td>
+    						<td>-</td>
+    						<td>R$ 12,00</td>
+    					</tr>
+    					<tr>
+    						<td>Cheesecake</td>
+    						<td>-</td>
+    						<td>R$ 12,00</td>
+    					</tr>
+    					<tr>
+    						<td>Salada de frutas</td>
+    						<td>-</td>
+    						<td>R$ 9,00</td>
+    					</tr>
+    				</tbody>
+    
+    			</table>
+    			
+    			<div class="galeria-cardapio">
+      			<figure>
+      			  <img src="img/cardapio-1.jpg" alt="Deliciosos legumes flambados coloridos e frescos">
+      			  <figcaption>Legumes Flambados</figcaption>
+      			</figure>
+      			<figure>
+      			  <img src="img/cardapio-2.jpg" alt="Suculento macarrão com polvo decorado com folhas verdes frescas e pimenta rosa">
+      			  <figcaption>Macarrão com polvo</figcaption>
+      			</figure>
+      			<figure>
+      			  <img src="img/cardapio-3.jpg" alt="Saboroso pudim de frutas vermelhas decorado com amoras e raspas de laranja">
+      			  <figcaption>Pudim de frutas vermelhas</figcaption>
+      			</figure>
+    			</div>
+    
+    			<!-- JANTA -->
+    
+    			<table id="jantar">
+    
+    				<thead>
+    					<tr>
+    						<th class="h2">Entradas do jantar</th>
+    						<th>Inteira</th>
+    						<th>Meia</th>
+    					</tr>
+    				</thead>
+    
+    				<tbody>
+    					<tr>
+    						<td>Pães integrais com mel e manteiga</td>
+    						<td>R$ 20,00</td>
+    						<td>R$ 15,00</td>
+    					</tr>
+    					<tr>
+    						<td>Salada verde</td>
+    						<td>R$ 16,00</td>
+    						<td>R$ 12,00</td>
+    					</tr>
+    					<tr>
+    						<td>Folheado de queijo</td>
+    						<td>R$ 18,00</td>
+    						<td>R$ 14,00</td>
+    					</tr>
+    					<tr>
+    						<td>Carpaccio ao molho de mostarda</td>
+    						<td>R$ 22,00</td>
+    						<td>R$ 27,00</td>
+    					</tr>
+    					<tr>
+    						<td>Tábua de frios</td>
+    						<td>R$ 20,00</td>
+    						<td>R$ 15,00</td>
+    					</tr>
+    					<!------------------------>
+    					<tr>
+    						<th class="h2">Pratos principais do jantar</th>
+    					</tr>
+    					<tr>
+    						<td>Risoto de funghi</td>
+    						<td>R$ 36,00</td>
+    						<td>R$ 46,00</td>
+    					</tr>
+    					<tr>
+    						<td>Capeletti ao molho pesto</td>
+    						<td>R$ 38,00</td>
+    						<td>R$ 52,00</td>
+    					</tr>
+    					<tr>
+    						<td>Filet mignon ao molho de gorgonzola</td>
+    						<td>R$ 48,00</td>
+    						<td>R$ 64,00</td>
+    					</tr>
+    					<!------------------------>
+    					<tr>
+    						<th class="h2">Sobremesas do jantar</th>
+    					</tr>
+    					<tr>
+    						<td>Torta de limão</td>
+    						<td>-</td>
+    						<td>R$ 12,00</td>
+    					</tr>
+    					<tr>
+    						<td>Brigadeiro de colher</td>
+    						<td>-</td>
+    						<td>R$ 12,00</td>
+    					</tr>
+    					<tr>
+    						<td>Creme de papaia com licor de Cassis</td>
+    						<td>-</td>
+    						<td>R$ 13,00</td>
+    					</tr>
+    				</tbody>
+    			</table>
+    			
+    			<div class="galeria-cardapio">
+      			<figure>
+      			  <img src="img/cardapio-7.jpg" alt="Nutritiva porção de bolinhos 7 grãos decorada com flores amarela e branca">
+      			  <figcaption>Bolinho 7 grãos</figcaption>
+      			</figure>
+      			<figure>
+      			  <img src="img/cardapio-5.jpg" alt="Saboroso arroz com camarão, pimenta, molho e especiarias">
+      			  <figcaption>Arroz apimentado com camarão</figcaption>
+      			</figure>
+      			<figure>
+      			  <img src="img/cardapio-6.jpg" alt="Deliciosa salada de frutas da época com castanhas e coco ralado">
+      			  <figcaption>Salada de frutas com castanhas</figcaption>
+      			</figure>
+    			</div>
+    
+    			<!-- BEBIDAS -->
+    
+    			<table id="bebidas">
+    
+    				<thead>
+    					<tr>
+    						<th class="h2">Bebidas Não Alcoólicas</th>
+    						<th>300ml</th>
+    						<th>500ml</th>
+    					</tr>
+    				</thead>
+    
+    				<tbody>
+    					<tr>
+    						<td>Água</td>
+    						<td>R$ 3,00</td>
+    						<td>R$ 5,00</td>
+    					</tr>
+    					<tr>
+    						<td>Água com gás</td>
+    						<td>R$ 3,00</td>
+    						<td>R$ 5,00</td>
+    					</tr>
+    					<tr>
+    						<td>Refrigerante</td>
+    						<td>R$ 4,00</td>
+    						<td>R$ 6,00</td>
+    					</tr>
+    					<tr>
+    						<td>Suco natural (laranja, limão, acerola, melão)</td>
+    						<td>R$ 4,00</td>
+    						<td>R$ 6,00</td>
+    					</tr>
+    					<!------------------------>
+    					<tr>
+    						<th class="h2">Bebidas Alcoólicas</th>
+    						<th>Dose</th>
+    						<th>Garrafa</th>
+    					</tr>
+    					<tr>
+    						<td>Vinho Tinto</td>
+    						<td>R$ 15,00</td>
+    						<td>R$ 45,00</td>
+    					</tr>
+    					<tr>
+    						<td>Vinho Branco</td>
+    						<td>R$ 14,00</td>
+    						<td>R$ 42,00</td>
+    					</tr>
+    					<tr>
+    						<td>Whisky</td>
+    						<td>R$ 26,00</td>
+    						<td>R$ 90,00</td>
+    					</tr>
+    					<tr>
+    						<td>Espumante Nacional</td>
+    						<td>-</td>
+    						<td>R$ 43,00</td>
+    					</tr>
+    					<tr>
+    						<td>Espumante Francês</td>
+    						<td>-</td>
+    						<td>R$ 63,00</td>
+    					</tr>
+    					<tr>
+    						<td>Cerveja Artesanal</td>
+    						<td>-</td>
+    						<td>R$ 31,00</td>
+    					</tr>
+    				</tbody>
+    
+    			</table>
+    			
+    			<div class="galeria-cardapio">
+      			<figure>
+      			  <img src="img/cardapio-4.jpg" alt="Refrescante drink azul feito com martini na taça decorada com sal">
+      			  <figcaption>Martini Moonlight</figcaption>
+      			</figure>
+      			<figure>
+      			  <img src="img/cardapio-10.jpg" alt="Vinho tinto encorpado da melhor qualidade">
+      			  <figcaption>Toro Loco (Malbec)</figcaption>
+      			</figure>
+      			<figure>
+      			  <img src="img/cardapio-9.jpg" alt="Drink autoral feito com cacau e leite decorado com cacau em pó">
+      			  <figcaption>Cacau Drink</figcaption>
+      			</figure>
+    			</div>
+    			
+        </div>
+      </section>
+    </div>
+    
+    <footer>
+			<div class=content>
+
+	      <section>
+	        <ul>
+	          <li><strong>A Cozinharia</strong></li>
+	          <li>Rua Frei Caneca, 920 - Consolação</li>
+	          <li>Tel: 11 4443 0324</li>
+	          <li>e-mail: contato@acozinharia.com.br</li>
+	        </ul>
+	      </section>
+
+	      <section>
+	        <ul>
+	          <li><strong>Horário de Funcionamento:</strong></li>
+	          <li>Segunda a Quarta das 12h às 15h / 19h30 às 23h</li>
+	          <li>Quinta e Sexta das 12h às 15h / 19h30 às 00h</li>
+	          <li>Sábado das 12h às 00h - direto</li>
+	          <li>Domingo das 12h às 17h</li>
+	        </ul>
+	      </section>
+
+			</div>
+    </footer>
+
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		
+	</body>
+</html>
+    
+    
