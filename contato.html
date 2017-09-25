@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cozinharia</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+    <link rel="icon" href="img/favicon-cozinharia.png">
+	</head>
+
+	<body>
+
+    <header id="menu-normal">
+
+			<div class="content">
+	      <img src="img/logo-cozinharia.svg" alt="Logotipo da Cozinharia">
+	      <nav>
+	        <ul>
+	          <li><a href="index.html">Home</a></li>
+	          <li><a href="a-cozinharia.html">A Cozinharia</a></li>
+	          <li><a href="cardapio.html">Cardápio</a></li>
+	          <li class=contem-submenu>
+	            <a href="#">Eventos</a>
+	            <ul class=submenu>
+	              <li><a href="casamentos.html">Casamentos</a></li>
+	              <li><a href="empresariais.html">Empresariais</a></li>
+	            </ul>
+	          </li>
+	          <li><a href="contato.html" class=active>Contato</a></li>
+	        </ul>
+	      </nav>
+			</div>
+    </header>
+    
+    <!-- MENU HAMBURGUER - COM JS -->
+    
+    <header id="menu-hamburguer">
+      <div class="content">
+        <img src="img/logo-cozinharia.svg" alt="Cozinharia">
+  			<button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+      </div>
+      
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="index.html" class=active>Home</a></li>
+            <li><a href="a-cozinharia.html">A Cozinharia</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="casamentos.html">Casamentos</a></li>
+            <li><a href="empresariais.html">Empresariais</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="contato" class="conteiner">
+
+      <h1>Contato</h1>
+
+      <svg height="5" width="100">
+        <line x1="0" x2="100" style="stroke:#efd25a; stroke-width:6"/>
+      </svg>
+
+      <section class="contato">
+
+        <section>
+          <ul>
+            <li>Rua Frei Caneca, 920 - Consolação</li>
+            <li>São Paulo - SP</li>
+          </ul>
+          <div class="icon">
+	          <img src="img/icone-fone.svg" alt="Ícone de telefone">
+	          <p>Tel: 11 4443 0324</p>
+	        </div>
+	        <div class="icon">
+	          <img src="img/icone-mail.svg" alt="Ícone de e-mail">
+	          <p>e-mail: contato@acozinharia.com.br</p>
+	        </div>
+        </section>
+
+        <section>
+          <ul>
+            <li><strong>Horário de Funcionamento:</strong></li>
+            <li>Segunda a Quarta das 12h às 15h / 19h30 às 23h</li>
+            <li>Quinta e Sexta das 12h às 15h / 19h30 às 00h</li>
+            <li>Sábado das 12h às 00h - direto</li>
+            <li>Domingo das 12h às 17h</li>
+          </ul>
+        </section>
+      </section>
+
+			<iframe width="100%" height="450" frameborder="0" style="border:0"
+				src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJYS6QbFxazpQROcpD3kh6spk&key=AIzaSyCtasldqvAHqR46qjFKsBCVwIotW1mUYzg"
+				allowfullscreen>
+			</iframe>
+
+			<section class="contato2">
+
+				<form action="https://formspree.io/laudlemos@gmail.com" accept-charset="utf-8" method="post">
+
+					<h2>Quer mandar uma mensagem pra gente?</h2>
+
+					<label for="nome">Nome</label>
+					<input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+					<label for="e-mail">E-mail</label>
+					<input type="email" name="e-mail" id="e-mail" placeholder="Digite seu e-mail" required>
+					<label for="assunto">Assunto</label>
+					<select name="assunto" id="assunto" required>
+						<option value="Selecione" disabled selected>Selecione o assunto da mensagem</option>
+						<option value="Reservas">Reservas</option>
+						<option value="Eventos e Aniversários">Eventos e Aniversários</option>
+						<option value="Dúvidas e Reclamações">Dúvidas e Reclamações</option>
+						<option value="Imprensa">Imprensa</option>
+						<option value="Outros">Outros</option>
+					</select>
+					<label for="mensagem">Mensagem</label>
+					<textarea name="mensagem" id="mensagem" rows="10" cols="70%" placeholder="Digite sua mensagem" required></textarea>
+					<button type="submit" class="b-amarelo">Enviar</button>
+				</form>
+
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprogramaria&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+			</section>
+    </section>
+
+
+
+    <footer>
+			<div class=content>
+
+	      <section>
+	        <ul>
+	          <li><strong>A Cozinharia</strong></li>
+	          <li>Rua Frei Caneca, 920 - Consolação</li>
+	          <li>Tel: 11 4443 0324</li>
+	          <li>e-mail: contato@acozinharia.com.br</li>
+	        </ul>
+	      </section>
+
+	      <section>
+	        <ul>
+	          <li><strong>Horário de Funcionamento:</strong></li>
+	          <li>Segunda a Quarta das 12h às 15h / 19h30 às 23h</li>
+	          <li>Quinta e Sexta das 12h às 15h / 19h30 às 00h</li>
+	          <li>Sábado das 12h às 00h - direto</li>
+	          <li>Domingo das 12h às 17h</li>
+	        </ul>
+	      </section>
+
+			</div>
+    </footer>
+
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	
+	</body>
+</html>
